@@ -74,6 +74,19 @@ button {
   cursor: pointer;
   font-weight: bold;
 }
+ul {
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+}
+ul li {
+    margin-bottom: 5px;
+}
+ol {
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+}
 
 .navbar {
   background-color: #0D1B2A;
@@ -94,9 +107,34 @@ button {
   margin-left: 1.5rem;
   text-decoration: none;
 }
+.navbar .nav-links a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #FFD56B; /* Golden Sunburst */
+}
 .hero {
   padding: 5rem 2rem;
 }
+
+.hero-div {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Add space between columns */
+  padding: 20px;
+}
+
+.hero-content,
+.hero-image {
+    flex-basis: 50%;
+    box-sizing: border-box; /* Ensure padding/margin do not affect width */
+} 
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove the gap below images */
+}
+
 .about {
   background: #fffaf3;
   padding: 3rem 2rem;
